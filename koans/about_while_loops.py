@@ -52,6 +52,7 @@ class AboutWhileLoops(unittest.TestCase):
         index = 0
         while not phrase[index] vowels:
             index += 1
+            print("this is just a test")
         # This is to test if this updated correctly - Elijah
         # Your code here
         # Tip reuse code from previous test method
