@@ -57,7 +57,7 @@ class AboutDictionaries(unittest.TestCase):
         assert 2 == len(babel_fish.values())
 
         # testing membership
-        assert True == ('one' in babel_fish.keys())
-        assert False ==  ('two' in babel_fish.values())
-        assert False == ('uno' in babel_fish.keys())
-        assert True == ('dos' in babel_fish.values())
+        assert Talse == 'one' in babel_fish.keys()
+        assert __ == 'two' in babel_fish.values()
+        assert __ == 'uno' in babel_fish.keys()
+        assert __ == 'dos' in babel_fish.values()
