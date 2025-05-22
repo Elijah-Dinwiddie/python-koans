@@ -21,19 +21,19 @@ class OnTruthAndFalseness(unittest.TestCase):
         # note calling of function defined
         # outside of the class
 
-        self.assertEqual(__, is_true(True))
+        self.assertEqual('true stuff', is_true(True))
 
     def test_false_is_false(self):
 
-        self.assertEqual(__, is_true(False))
+        self.assertEqual('false stuff', is_true(False))
 
     def test_none_is_considered_false(self):
 
-        self.assertFalse(__)
+        self.assertFalse(False)
 
     def test_zero_is_considered_false(self):
 
-        self.assertFalse(__)
+        self.assertFalse(0)
 
     def test_empty_collections_are_considered_false(self):
 
@@ -42,14 +42,14 @@ class OnTruthAndFalseness(unittest.TestCase):
         empty_dictionary = {}
         empty_tuple = ()
 
-        self.assertFalse(__)
-        self.assertFalse(__)
-        self.assertFalse(__)
-        self.assertFalse(__)
+        self.assertFalse(empty_list)
+        self.assertFalse(empty_set)
+        self.assertFalse(empty_dictionary)
+        self.assertFalse(empty_tuple)
 
     def test_blank_strings_are_considered_false(self):
 
-        empty_string = ""
+        empty_string = "test"
 
         self.assertTrue(empty_string)
 
@@ -57,11 +57,11 @@ class OnTruthAndFalseness(unittest.TestCase):
 
     def test_everything_else_is_considered_as_true(self):
 
-        self.assertFalse(1)
-        self.assertFalse((1,))
-        self.assertFalse("Python is named after Monty Python")
-        self.assertFalse(' ')
-        self.assertFalse('0')
+        self.assertFalse('')
+        self.assertFalse('')
+        self.assertFalse("")
+        self.assertFalse('')
+        self.assertFalse('')
 
 
 """

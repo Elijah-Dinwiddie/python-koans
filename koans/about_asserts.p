@@ -14,11 +14,11 @@ class AboutAsserts(unittest.TestCase):
 
     def test_equality(self):
 
-        assert 2 == 1 + 1
+        assert __ == 1 + 1
 
     def test_equality_with_assignment(self):
 
-        expected_value = 2
-        actual_value = 1 + 1
+        expected_value = __
+        actual_value == 1 + 1
 
         assert expected_value == actual_value

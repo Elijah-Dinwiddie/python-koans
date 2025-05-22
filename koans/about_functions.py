@@ -11,7 +11,7 @@ class AboutFunctions(unittest.TestCase):
     def test_function_creation(self):
 
         def say_hi():
-            return __
+            return 'hi'
 
         assert say_hi() == 'hi'
 
@@ -19,7 +19,7 @@ class AboutFunctions(unittest.TestCase):
 
         def concatenate(string1, string2):
             # Enter your code here
-            return None
+            return string1 + string2
 
         assert concatenate('abc', 'def') == 'abcdef'
 
@@ -37,7 +37,10 @@ class AboutFunctions(unittest.TestCase):
 
         def get_day_difference(day_one, day_two):
             # Enter your code here
-            return None
+            difference = day_one - day_two
+            if (difference < 0):
+                difference *= -1
+            return difference
 
         assert get_day_difference(34, 254) == 220
 
@@ -45,7 +48,8 @@ class AboutFunctions(unittest.TestCase):
 
         def get_age_in_2050(age_now):
             # Enter your code here
-            return None
+            ageFuture = age_now + 36
+            return ageFuture
 
         assert get_age_in_2050(34) == 70
 
@@ -65,7 +69,8 @@ class AboutFunctions(unittest.TestCase):
 
         def convert_to_celsius(fahrenheit):
             # Enter your code here
-            return None
+            celsius = int((fahrenheit - 32)* 5/9)
+            return celsius
 
         assert convert_to_celsius(80) == 26
 
@@ -75,7 +80,8 @@ class AboutFunctions(unittest.TestCase):
 
         def convert_to_miles(kilometers):
             # Enter your code here
-            return False
+            miles = kilometers * 1.6
+            return miles
 
         miles = convert_to_miles(34)
         self.assertAlmostEqual(miles, 54.4, 1)
