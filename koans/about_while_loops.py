@@ -45,14 +45,13 @@ class AboutWhileLoops(unittest.TestCase):
         # >>> 'b' in 'abc'
         # True
 
-        vowels = 'aeiou'
-
+        test_vowel = 'o'
         phrase = 'Pdrlso'
 
         index = 0
-        while not phrase[index] vowels:
-            index += 1
 
+        while not phrase[index] == test_vowel:
+            index = index + 1
         # Your code here
         # Tip reuse code from previous test method
 
